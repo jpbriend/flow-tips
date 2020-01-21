@@ -32,7 +32,7 @@ Beware: this step will stop the Flow web server. Thus Flow UI will not be access
 
 * Stop the Flow web server
 
-`sudo systemctl stop commanderApache.service`
+`sudo /etc/init.d/commanderApache.service stop`
 
 * Generate the certificate using Certbot. Enter your domain name when asked.
 
@@ -40,7 +40,7 @@ Beware: this step will stop the Flow web server. Thus Flow UI will not be access
 
 * Restart the Flow web server
 
-`sudo systemctl start commanderApache.service`
+`sudo /etc/init.d/commanderApache.service start`
 
 The certificate and the private keys have been generated here (by default) (_domain.name_ is the domain you provided earlier):
 * Certificate is generated here : `/etc/letsencrypt/live/domain.name/fullchain.pem`
